@@ -1,0 +1,15 @@
+Am implementat un editor de text minimal astfel:
+
+-pentru citire: am citit caracter cu caracter din fișierul de input; folosind o
+variabilă „okbun”, am știut când citesc text și când citesc comenzi; atunci cand
+întâlneam ”::i” schimbam valoarea variabilei „okbun”; am introdus textul într-o
+listă, fiecare caracter reprezentând un nod; am introdus comenzile într-o stivă
+după ce le-am transformat în șir de caractere.
+
+-pentru comenzi: de fiecare dată când citeam o nouă comandă, treceam prin mai
+multe if-uri pentru a determina ce comandă este; în cazul comezilor formate din
+mai multe cuvinte, le-am separat folosind funcția predefinită „strtok”; fiecare
+comandă a fost salvată într-o stivă ce va fi folosită în cazul comenzii de undo.
+
+-pentru comanda de save: de fiecare dată când se dădea save rescriam fișierul de
+output
